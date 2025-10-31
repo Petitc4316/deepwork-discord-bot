@@ -1,0 +1,75 @@
+═══════════════════════════════════════════════════════════════
+  🧠 DEEP WORK DISCORD BOT - QUICK START
+═══════════════════════════════════════════════════════════════
+
+Your bot is ready! Follow these steps:
+
+📋 STEP 1: Get Discord Bot Token
+──────────────────────────────────────────────────────────────
+1. Visit: https://discord.com/developers/applications
+2. Create "New Application"
+3. Go to "Bot" → "Add Bot"
+4. Enable these intents:
+   ✅ Presence Intent
+   ✅ Server Members Intent
+   ✅ Message Content Intent
+5. Copy Bot Token
+6. Copy Application ID from "General Information"
+
+📋 STEP 2: Invite Bot to Your Server
+──────────────────────────────────────────────────────────────
+1. Go to "OAuth2" → "URL Generator"
+2. Select: bot + applications.commands
+3. Permissions: Send Messages, Connect, Speak, Use Slash Commands
+4. Open generated URL and invite to your server
+5. Right-click server → Copy Server ID (enable Developer Mode first)
+
+📋 STEP 3: Configure Bot
+──────────────────────────────────────────────────────────────
+Create file: .env
+
+Add this (replace with your values):
+DISCORD_TOKEN=your_bot_token_here
+APPLICATION_ID=your_application_id_here
+GUILD_ID=your_guild_id_here
+
+📋 STEP 4: Install FFmpeg (for audio)
+──────────────────────────────────────────────────────────────
+Windows: Download from ffmpeg.org, add to PATH
+Mac:     brew install ffmpeg
+Linux:   sudo apt-get install ffmpeg
+
+📋 STEP 5: Start Bot
+──────────────────────────────────────────────────────────────
+npm run deploy
+npm run dev
+
+You should see: "🧠 Deep Work Discord Bot is now online!"
+
+📋 STEP 6: Test It!
+──────────────────────────────────────────────────────────────
+1. Join a voice channel
+2. Type: /deepwork duration:25
+3. Click "✅ Confirm"
+4. Session starts!
+
+═══════════════════════════════════════════════════════════════
+  📖 MORE INFO
+═══════════════════════════════════════════════════════════════
+
+📘 SETUP_GUIDE.md     - Detailed 10-minute setup
+📗 README.md          - Full documentation
+📙 PROJECT_SUMMARY.md - Complete overview
+
+═══════════════════════════════════════════════════════════════
+  🎮 COMMANDS
+═══════════════════════════════════════════════════════════════
+
+/deepwork duration:X  - Start X-minute Deep Work session
+/stats                - View your statistics
+/stats @user          - View someone else's stats
+/leaderboard          - See top users
+
+═══════════════════════════════════════════════════════════════
+
+Good luck with your Deep Work sessions! 🎯✨
